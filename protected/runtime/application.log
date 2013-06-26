@@ -7037,3 +7037,12 @@ Stack trace:
 REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/dimension/adminDataJson?_search=false&nd=1372238663241&rows=20&page=1&sidx=&sord=asc
 HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/dimension/admin
 ---
+2013/06/26 11:34:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/dimensionTag/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/dimensionTag/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/dimension/
+---
