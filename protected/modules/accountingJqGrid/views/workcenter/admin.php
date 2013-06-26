@@ -2,10 +2,10 @@
 /* @var $this BankAccountController */
 /* @var $model BankAccount */
 
-$this->breadcrumbs=array(
+/*$this->breadcrumbs=array(
 	'Bank Accounts'=>array('index'),
 	'Manage',
-);
+);*/
 $this->widget(
     'ext.JqGrid.JqGrid',
     array(
@@ -20,9 +20,8 @@ $this->widget(
                 'column' => array(
                     'names' => array(
 									'ID',
-									'Code',
 									'Name',
-									'Decimals',
+									'Description',
 									'Active'
 							   ),
                     'models' => array(
@@ -34,24 +33,17 @@ $this->widget(
                             'key' => true,
                         ),
                         array(
-                            'name' => 'code',
-                            'index' => 'code',
-                            'width' => 200,
-                            'editable' => true,
-                        ),
-                        array(
                             'name' => 'name',
                             'index' => 'name',
                             'width' => 200,
                             'editable' => true,
                         ),
-						 array(
-                            'name' => 'decimals',
-                            'index' => 'decimals',
-                            'width' => 100,
+                        array(
+                            'name' => 'description',
+                            'index' => 'description',
+                            'width' => 300,
                             'editable' => true,
-                            'edittype' => 'select',
-                            'editoptions' => array('value' => '0:No; 1:Yes;'),
+							'edittype' => 'textarea'
                         ),
 						array(
                             'name' => 'is_active',
