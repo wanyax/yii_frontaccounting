@@ -1,66 +1,84 @@
 <?php
-/* @var $this MeasureUnitController */
-/* @var $model MeasureUnit */
+/* @var $this BankAccountController */
+/* @var $model BankAccount */
 
 $this->breadcrumbs=array(
-	'Measure Units'=>array('index'),
+	'Bank Accounts'=>array('index'),
 	'Manage',
 );
-
-$this->menu=array(
-	array('label'=>'List MeasureUnit', 'url'=>array('index')),
-	array('label'=>'Create MeasureUnit', 'url'=>array('create')),
+$this->widget(
+    'ext.JqGrid.JqGrid',
+    array(
+        'gridId' => 'demo-grid',
+        'pagerId' => 'demo-pager',
+        'gridOptions' => array(
+            'grid' => array(  // new param
+                'geo' => array(
+                    'height' => 'auto',
+                    'width' => 970,
+                ),
+                'column' => array(
+                    'names' => array(
+									'ID',
+									'Code',
+									'Name',
+									'Decimals',
+									'No. Account'
+							   ),
+                    'models' => array(
+                        array(
+                            'name' => 'id',
+                            'index' => 'id',
+                            'width' => 100,
+                            'hidden' => false,
+                            'key' => true,
+                        ),
+                        array(
+                            'name' => 'code',
+                            'index' => 'code',
+                            'width' => 200,
+                            'editable' => true,
+                        ),
+                        array(
+                            'name' => 'name',
+                            'index' => 'name',
+                            'width' => 200,
+                            'editable' => true,
+                        ),
+						 array(
+                            'name' => 'decimals',
+                            'index' => 'decimals',
+                            'width' => 100,
+                            'editable' => true,
+                            'edittype' => 'select',
+                            'editoptions' => array('value' => '0:No; 1:Yes;'),
+                        ),
+						array(
+                            'name' => 'is_active',
+                            'index' => 'is_active',
+                            'width' => 100,
+                            'editable' => true,
+                            'edittype' => 'select',
+                            'editoptions' => array('value' => '0:No; 1:Yes;'),
+                        ),
+                    ),
+                ),
+                'data' => array(
+                    'type' => 'json',
+                ),
+                'dataRmt' => array(
+                    'url' => 'adminDataJson',
+                ),
+            ),
+            'navBar' => array(
+                'htmlElm' => 'demo-pager',
+                'data' => array(
+                    'visible' => true,
+                    'rowList' => array(10, 20, 30),
+                    'rowNum' => 20,
+                ),
+            ),
+        ),
+    )
 );
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$('#measure-unit-grid').yiiGridView('update', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
 ?>
-
-<h1>Manage Measure Units</h1>
-
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
-
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'measure-unit-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'id',
-		'created_time',
-		'created_by',
-		'updated_time',
-		'updated_by',
-		'is_deleted',
-		/*
-		'deleted_time',
-		'deleted_by',
-		'code',
-		'name',
-		'decimals',
-		'is_active',
-		*/
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>

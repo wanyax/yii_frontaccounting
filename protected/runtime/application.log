@@ -6820,3 +6820,24 @@ Stack trace:
 REQUEST_URI=/cloud-wahyu/index.php/accountingJqGrid/attachment/adminDataJson?_search=false&nd=1372212287768&rows=20&page=1&sidx=name&sord=asc
 HTTP_REFERER=http://localhost/cloud-wahyu/index.php/accountingJqGrid/attachment/admin
 ---
+2013/06/26 09:18:05 [error] [exception.CException] exception 'CException' with message 'MeasureUnitController tidak bisa menemukan view "admin" yang di-request.' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\MeasureUnitController.php(143): CController->render('admin', Array)
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): MeasureUnitController->actionAdmin()
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('admin')
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/measureUnit/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/default/
+---

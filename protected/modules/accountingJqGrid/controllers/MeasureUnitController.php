@@ -36,7 +36,7 @@ class MeasureUnitController extends AppController
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin', 'delete', 'admindatajson'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -170,4 +170,29 @@ class MeasureUnitController extends AppController
 			Yii::app()->end();
 		}
 	}
+	
+	public function actionAdminDataJson()
+	{
+	    $measure = MeasureUnit::model();
+	    $criteria = $this->getCriteriaFromRequest($measure);
+    
+	    if(!$criteria) {
+		header("HTTP/1.0 400 Bad Request");
+		return;
+	    }
+    
+	    $measures = $measure->findAll($criteria);
+	    $count = $measure->count();
+	    
+	    $this->renderPartial(
+		'adminDataJson',
+		array(
+		    'measures' => $measures,
+		    'count' => $count,
+		    'page' => $_GET['page'],
+		    'rows' => $_GET['rows'],
+		)
+	    );
+	}
+	
 }
