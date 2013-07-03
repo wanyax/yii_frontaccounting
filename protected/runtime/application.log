@@ -7557,3 +7557,404 @@ Stack trace:
 REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/taxType/admin
 HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/contactCategory/
 ---
+2013/06/28 03:15:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/taxTypeItem/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/taxTypeItem/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/taxType/admin
+---
+2013/06/28 03:19:50 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.accountingJqGrid.TaxTypeItem" tidak valid. Pastikan alias tersebut menunjuk ke file PHP yang ada' in C:\xampp\htdocs\yii_frontaccounting\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/gii/crud
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/gii/crud
+---
+2013/06/28 04:05:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "adminDataJson" seperti yang diminta.' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(270): CController->missingAction('adminDataJson')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/taxTypeItem/adminDataJson?_search=false&nd=1372385114614&rows=20&page=1&sidx=&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/taxTypeItem/
+---
+2013/06/28 04:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/fiscalYear/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/fiscalYear/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/taxTypeItem/admin
+---
+2013/06/28 04:12:14 [error] [php] Uninitialized string offset: 11 (C:\xampp\htdocs\yii_frontaccounting\framework\gii\generators\crud\CrudCode.php:134)
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\gii\generators\crud\CrudCode.php(86): CrudCode->__get()
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\gii\CCodeGenerator.php(162): CrudCode->prepare()
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\gii\CCodeGenerator.php(63): CrudGenerator->prepare()
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): CrudGenerator->actionIndex()
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(286): CrudGenerator->runAction()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CrudGenerator->runActionWithFilters()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CrudGenerator->run()
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CWebApplication->run()
+REQUEST_URI=/yii_frontaccounting/index.php/gii/crud
+2013/06/28 05:05:04 [error] [exception.CException] exception 'CException' with message 'Properti "FiscalYear.is_active" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('is_active')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\fiscalYear\adminDataJson.php(11): CActiveRecord->__get('is_active')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\FiscalYearController.php(195): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): FiscalYearController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/fiscalYear/adminDataJson?_search=false&nd=1372388703359&rows=20&page=1&sidx=&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/fiscalYear/admin
+---
+2013/06/28 05:05:15 [error] [exception.CException] exception 'CException' with message 'Properti "FiscalYear.is_active" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('is_active')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\fiscalYear\adminDataJson.php(11): CActiveRecord->__get('is_active')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\FiscalYearController.php(195): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): FiscalYearController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/fiscalYear/adminDataJson?_search=false&nd=1372388703359&rows=20&page=1&sidx=&sord=asc
+---
+2013/06/28 05:15:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/form/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/form/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/attachment/admin
+---
+2013/06/28 05:19:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/salesQuotation/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesQuotation/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/default/
+---
+2013/06/28 05:20:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/salesOrder/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesOrder/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid
+---
+2013/06/28 05:54:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/salesOrder/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesOrder/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/contactCategory/admin
+---
+2013/06/28 10:34:11 [error] [php] Undefined variable: fiscals (C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesOrder\adminDataJson.php:4)
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): SalesOrderController->renderFile()
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesOrderController.php(200): SalesOrderController->renderPartial()
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesOrderController->actionAdminDataJson()
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): SalesOrderController->runAction()
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): SalesOrderController->filterAccessControl()
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): SalesOrderController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): SalesOrderController->run()
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CWebApplication->run()
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesOrder/adminDataJson?_search=false&nd=1372408449375&rows=20&page=1&sidx=&sord=asc
+2013/06/28 10:36:58 [error] [exception.CException] exception 'CException' with message 'Properti "SalesOrder.begin" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('begin')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesOrder\adminDataJson.php(5): CActiveRecord->__get('begin')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesOrderController.php(200): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesOrderController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesOrder/adminDataJson?_search=false&nd=1372408616530&rows=20&page=1&sidx=&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesOrder/admin
+---
+2013/06/28 10:59:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'customer_head_id' in order clause is ambiguous. Statement SQL yang dijalankan: SELECT `t`.`id` AS `t0_c0`, `t`.`created_time` AS `t0_c1`, `t`.`created_by` AS `t0_c2`, `t`.`updated_time` AS `t0_c3`, `t`.`updated_by` AS `t0_c4`, `t`.`is_deleted` AS `t0_c5`, `t`.`deleted_time` AS `t0_c6`, `t`.`deleted_by` AS `t0_c7`, `t`.`transaction_type_id` AS `t0_c8`, `t`.`transaction_no` AS `t0_c9`, `t`.`version` AS `t0_c10`, `t`.`type` AS `t0_c11`, `t`.`customer_head_id` AS `t0_c12`, `t`.`customer_branch_id` AS `t0_c13`, `t`.`reference` AS `t0_c14`, `t`.`customer_reference` AS `t0_c15`, `t`.`comment` AS `t0_c16`, `t`.`date` AS `t0_c17`, `t`.`sales_type_id` AS `t0_c18`, `t`.`shipping_company_id` AS `t0_c19`, `t`.`delivery_address` AS `t0_c20`, `t`.`contact_phone` AS `t0_c21`, `t`.`contact_email` AS `t0_c22`, `t`.`deliver_to` AS `t0_c23`, `t`.`freight_cost` AS `t0_c24`, `t`.`from_stock_location_id` AS `t0_c25`, `t`.`delivery_date` AS `t0_c26`, `t`.`payment_term_id` AS `t0_c27`, `t`.`total` AS `t0_c28`, `transactionType`.`id` AS `t1_c0`, `transactionType`.`created_time` AS `t1_c1`, `transactionType`.`created_by` AS `t1_c2`, `transactionType`.`updated_time` AS `t1_c3`, `transactionType`.`updated_by` AS `t1_c4`, `transactionType`.`is_deleted` AS `t1_c5`, `transactionType`.`deleted_time` AS `t1_c6`, `transactionType`.`deleted_by` AS `t1_c7`, `transactionType`.`name` AS `t1_c8`, `transactionType`.`type_no` AS `t1_c9`, `transactionType`.`next_reference` AS `t1_c10`, `transactionType`.`old_abbreviation` AS `t1_c11`, `transactionType`.`old_code` AS `t1_c12`, `customerHead`.`id` AS `t2_c0`, `customerHead`.`created_time` AS `t2_c1`, `customerHead`.`created_by` AS `t2_c2`, `customerHead`.`updated_time` AS `t2_c3`, `customerHead`.`updated_by` AS `t2_c4`, `customerHead`.`is_deleted` AS `t2_c5`, `customerHead`.`deleted_time` AS `t2_c6`, `customerHead`.`deleted_by` AS `t2_c7`, `customerHead`.`name` AS `t2_c8`, `customerHead`.`reference` AS `t2_c9`, `customerHead`.`physical_address` AS `t2_c10`, `customerHead`.`mailing_address` AS `t2_c11`, `customerHead`.`goods_and_services_tax_no` AS `t2_c12`, `customerHead`.`currency_id` AS `t2_c13`, `customerHead`.`sales_type_id` AS `t2_c14`, `customerHead`.`dimension1_id` AS `t2_c15`, `customerHead`.`dimension2_id` AS `t2_c16`, `customerHead`.`credit_status_id` AS `t2_c17`, `customerHead`.`payment_term_id` AS `t2_c18`, `customerHead`.`discount` AS `t2_c19`, `customerHead`.`payment_discount` AS `t2_c20`, `customerHead`.`credit_limit` AS `t2_c21`, `customerHead`.`note` AS `t2_c22`, `customerHead`.`is_active` AS `t2_c23`, `customerBranch`.`id` AS `t3_c0`, `customerBranch`.`created_time` AS `t3_c1`, `customerBranch`.`created_by` AS `t3_c2`, `customerBranch`.`updated_time` AS `t3_c3`, `customerBranch`.`updated_by` AS `t3_c4`, `customerBranch`.`is_deleted` AS `t3_c5`, `customerBranch`.`deleted_time` AS `t3_c6`, `customerBranch`.`deleted_by` AS `t3_c7`, `customerBranch`.`customer_head_id` AS `t3_c8`, `customerBranch`.`name` AS `t3_c9`, `customerBranch`.`reference` AS `t3_c10`, `customerBranch`.`physical_address` AS `t3_c11`, `customerBranch`.`mailing_address` AS `t3_c12`, `customerBranch`.`area_id` AS `t3_c13`, `customerBranch`.`sales_person_id` AS `t3_c14`, `customerBranch`.`contact_name` AS `t3_c15`, `customerBranch`.`default_location_id` AS `t3_c16`, `customerBranch`.`tax_group_id` AS `t3_c17`, `customerBranch`.`sales_account_id` AS `t3_c18`, `customerBranch`.`sales_discount_account_id` AS `t3_c19`, `customerBranch`.`receivable_account_id` AS `t3_c20`, `customerBranch`.`payment_discount_account_id` AS `t3_c21`, `customerBranch`.`default_shipping_company_id` AS `t3_c22`, `customerBranch`.`disable_transaction` AS `t3_c23`, `customerBranch`.`sales_size_id` AS `t3_c24`, `customerBranch`.`note` AS `t3_c25`, `customerBranch`.`is_active` AS `t3_c26`, `salesType`.`id` AS `t4_c0`, `salesType`.`created_time` AS `t4_c1`, `salesType`.`created_by` AS `t4_c2`, `salesType`.`updated_time` AS `t4_c3`, `salesType`.`updated_by` AS `t4_c4`, `salesType`.`is_deleted` AS `t4_c5`, `salesType`.`deleted_time` AS `t4_c6`, `salesType`.`deleted_by` AS `t4_c7`, `salesType`.`name` AS `t4_c8`, `salesType`.`is_tax_included` AS `t4_c9`, `salesType`.`factor` AS `t4_c10`, `salesType`.`is_active` AS `t4_c11`, `shippingCompany`.`id` AS `t5_c0`, `shippingCompany`.`created_time` AS `t5_c1`, `shippingCompany`.`created_by` AS `t5_c2`, `shippingCompany`.`updated_time` AS `t5_c3`, `shippingCompany`.`updated_by` AS `t5_c4`, `shippingCompany`.`is_deleted` AS `t5_c5`, `shippingCompany`.`deleted_time` AS `t5_c6`, `shippingCompany`.`deleted_by` AS `t5_c7`, `shippingCompany`.`name` AS `t5_c8`, `shippingCompany`.`phone1` AS `t5_c9`, `shippingCompany`.`phone2` AS `t5_c10`, `shippingCompany`.`contact` AS `t5_c11`, `shippingCompany`.`address` AS `t5_c12`, `shippingCompany`.`is_active` AS `t5_c13`, `fromStockLocation`.`id` AS `t6_c0`, `fromStockLocation`.`created_time` AS `t6_c1`, `fromStockLocation`.`created_by` AS `t6_c2`, `fromStockLocation`.`updated_time` AS `t6_c3`, `fromStockLocation`.`updated_by` AS `t6_c4`, `fromStockLocation`.`is_deleted` AS `t6_c5`, `fromStockLocation`.`deleted_time` AS `t6_c6`, `fromStockLocation`.`deleted_by` AS `t6_c7`, `fromStockLocation`.`code` AS `t6_c8`, `fromStockLocation`.`name` AS `t6_c9`, `fromStockLocation`.`delivery_address` AS `t6_c10`, `fromStockLocation`.`phone1` AS `t6_c11`, `fromStockLocation`.`phone2` AS `t6_c12`, `fromStockLocation`.`fax` AS `t6_c13`, `fromStockLocation`.`email` AS `t6_c14`, `fromStockLocation`.`contact` AS `t6_c15`, `fromStockLocation`.`is_active` AS `t6_c16`, `paymentTerm`.`id` AS `t7_c0`, `paymentTerm`.`created_time` AS `t7_c1`, `paymentTerm`.`created_by` AS `t7_c2`, `paymentTerm`.`updated_time` AS `t7_c3`, `paymentTerm`.`updated_by` AS `t7_c4`, `paymentTerm`.`is_deleted` AS `t7_c5`, `paymentTerm`.`deleted_time` AS `t7_c6`, `paymentTerm`.`deleted_by` AS `t7_c7`, `paymentTerm`.`name` AS `t7_c8`, `paymentTerm`.`payment_term_type_id` AS `t7_c9`, `paymentTerm`.`days` AS `t7_c10`, `paymentTerm`.`is_active` AS `t7_c11` FROM `fa_sales_order` `t`  LEFT OUTER JOIN `fa_transaction_type` `transactionType` ON (`t`.`transaction_type_id`=`transactionType`.`id`)  LEFT OUTER JOIN `fa_customer_head` `customerHead` ON (`t`.`customer_head_id`=`customerHead`.`id`)  LEFT OUTER JOIN `fa_customer_branch` `customerBranch` ON (`t`.`customer_branch_id`=`customerBranch`.`id`)  LEFT OUTER JOIN `fa_sales_type` `salesType` ON (`t`.`sales_type_id`=`salesType`.`id`)  LEFT OUTER JOIN `fa_shipping_company` `shippingCompany` ON (`t`.`shipping_company_id`=`shippingCompany`.`id`)  LEFT OUTER JOIN `fa_location` `fromStockLocation` ON (`t`.`from_stock_location_id`=`fromStockLocation`.`id`)  LEFT OUTER JOIN `fa_payment_term` `paymentTerm` ON (`t`.`payment_term_id`=`paymentTerm`.`id`)  ORDER BY customer_head_id asc LIMIT 20.
+2013/06/28 10:59:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'customer_head_id' in order clause is ambiguous' in C:\xampp\htdocs\yii_frontaccounting\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php(761): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesOrderController.php(190): CActiveRecord->findAll(Object(CDbCriteria))
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesOrderController->actionAdminDataJson()
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#18 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#20 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesOrder/adminDataJson?_search=false&nd=1372409963466&rows=20&page=1&sidx=customer_head_id&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesOrder/admin
+---
+2013/06/28 10:59:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() gagal: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'customer_head_id' in order clause is ambiguous. Statement SQL yang dijalankan: SELECT `t`.`id` AS `t0_c0`, `t`.`created_time` AS `t0_c1`, `t`.`created_by` AS `t0_c2`, `t`.`updated_time` AS `t0_c3`, `t`.`updated_by` AS `t0_c4`, `t`.`is_deleted` AS `t0_c5`, `t`.`deleted_time` AS `t0_c6`, `t`.`deleted_by` AS `t0_c7`, `t`.`transaction_type_id` AS `t0_c8`, `t`.`transaction_no` AS `t0_c9`, `t`.`version` AS `t0_c10`, `t`.`type` AS `t0_c11`, `t`.`customer_head_id` AS `t0_c12`, `t`.`customer_branch_id` AS `t0_c13`, `t`.`reference` AS `t0_c14`, `t`.`customer_reference` AS `t0_c15`, `t`.`comment` AS `t0_c16`, `t`.`date` AS `t0_c17`, `t`.`sales_type_id` AS `t0_c18`, `t`.`shipping_company_id` AS `t0_c19`, `t`.`delivery_address` AS `t0_c20`, `t`.`contact_phone` AS `t0_c21`, `t`.`contact_email` AS `t0_c22`, `t`.`deliver_to` AS `t0_c23`, `t`.`freight_cost` AS `t0_c24`, `t`.`from_stock_location_id` AS `t0_c25`, `t`.`delivery_date` AS `t0_c26`, `t`.`payment_term_id` AS `t0_c27`, `t`.`total` AS `t0_c28`, `transactionType`.`id` AS `t1_c0`, `transactionType`.`created_time` AS `t1_c1`, `transactionType`.`created_by` AS `t1_c2`, `transactionType`.`updated_time` AS `t1_c3`, `transactionType`.`updated_by` AS `t1_c4`, `transactionType`.`is_deleted` AS `t1_c5`, `transactionType`.`deleted_time` AS `t1_c6`, `transactionType`.`deleted_by` AS `t1_c7`, `transactionType`.`name` AS `t1_c8`, `transactionType`.`type_no` AS `t1_c9`, `transactionType`.`next_reference` AS `t1_c10`, `transactionType`.`old_abbreviation` AS `t1_c11`, `transactionType`.`old_code` AS `t1_c12`, `customerHead`.`id` AS `t2_c0`, `customerHead`.`created_time` AS `t2_c1`, `customerHead`.`created_by` AS `t2_c2`, `customerHead`.`updated_time` AS `t2_c3`, `customerHead`.`updated_by` AS `t2_c4`, `customerHead`.`is_deleted` AS `t2_c5`, `customerHead`.`deleted_time` AS `t2_c6`, `customerHead`.`deleted_by` AS `t2_c7`, `customerHead`.`name` AS `t2_c8`, `customerHead`.`reference` AS `t2_c9`, `customerHead`.`physical_address` AS `t2_c10`, `customerHead`.`mailing_address` AS `t2_c11`, `customerHead`.`goods_and_services_tax_no` AS `t2_c12`, `customerHead`.`currency_id` AS `t2_c13`, `customerHead`.`sales_type_id` AS `t2_c14`, `customerHead`.`dimension1_id` AS `t2_c15`, `customerHead`.`dimension2_id` AS `t2_c16`, `customerHead`.`credit_status_id` AS `t2_c17`, `customerHead`.`payment_term_id` AS `t2_c18`, `customerHead`.`discount` AS `t2_c19`, `customerHead`.`payment_discount` AS `t2_c20`, `customerHead`.`credit_limit` AS `t2_c21`, `customerHead`.`note` AS `t2_c22`, `customerHead`.`is_active` AS `t2_c23`, `customerBranch`.`id` AS `t3_c0`, `customerBranch`.`created_time` AS `t3_c1`, `customerBranch`.`created_by` AS `t3_c2`, `customerBranch`.`updated_time` AS `t3_c3`, `customerBranch`.`updated_by` AS `t3_c4`, `customerBranch`.`is_deleted` AS `t3_c5`, `customerBranch`.`deleted_time` AS `t3_c6`, `customerBranch`.`deleted_by` AS `t3_c7`, `customerBranch`.`customer_head_id` AS `t3_c8`, `customerBranch`.`name` AS `t3_c9`, `customerBranch`.`reference` AS `t3_c10`, `customerBranch`.`physical_address` AS `t3_c11`, `customerBranch`.`mailing_address` AS `t3_c12`, `customerBranch`.`area_id` AS `t3_c13`, `customerBranch`.`sales_person_id` AS `t3_c14`, `customerBranch`.`contact_name` AS `t3_c15`, `customerBranch`.`default_location_id` AS `t3_c16`, `customerBranch`.`tax_group_id` AS `t3_c17`, `customerBranch`.`sales_account_id` AS `t3_c18`, `customerBranch`.`sales_discount_account_id` AS `t3_c19`, `customerBranch`.`receivable_account_id` AS `t3_c20`, `customerBranch`.`payment_discount_account_id` AS `t3_c21`, `customerBranch`.`default_shipping_company_id` AS `t3_c22`, `customerBranch`.`disable_transaction` AS `t3_c23`, `customerBranch`.`sales_size_id` AS `t3_c24`, `customerBranch`.`note` AS `t3_c25`, `customerBranch`.`is_active` AS `t3_c26`, `salesType`.`id` AS `t4_c0`, `salesType`.`created_time` AS `t4_c1`, `salesType`.`created_by` AS `t4_c2`, `salesType`.`updated_time` AS `t4_c3`, `salesType`.`updated_by` AS `t4_c4`, `salesType`.`is_deleted` AS `t4_c5`, `salesType`.`deleted_time` AS `t4_c6`, `salesType`.`deleted_by` AS `t4_c7`, `salesType`.`name` AS `t4_c8`, `salesType`.`is_tax_included` AS `t4_c9`, `salesType`.`factor` AS `t4_c10`, `salesType`.`is_active` AS `t4_c11`, `shippingCompany`.`id` AS `t5_c0`, `shippingCompany`.`created_time` AS `t5_c1`, `shippingCompany`.`created_by` AS `t5_c2`, `shippingCompany`.`updated_time` AS `t5_c3`, `shippingCompany`.`updated_by` AS `t5_c4`, `shippingCompany`.`is_deleted` AS `t5_c5`, `shippingCompany`.`deleted_time` AS `t5_c6`, `shippingCompany`.`deleted_by` AS `t5_c7`, `shippingCompany`.`name` AS `t5_c8`, `shippingCompany`.`phone1` AS `t5_c9`, `shippingCompany`.`phone2` AS `t5_c10`, `shippingCompany`.`contact` AS `t5_c11`, `shippingCompany`.`address` AS `t5_c12`, `shippingCompany`.`is_active` AS `t5_c13`, `fromStockLocation`.`id` AS `t6_c0`, `fromStockLocation`.`created_time` AS `t6_c1`, `fromStockLocation`.`created_by` AS `t6_c2`, `fromStockLocation`.`updated_time` AS `t6_c3`, `fromStockLocation`.`updated_by` AS `t6_c4`, `fromStockLocation`.`is_deleted` AS `t6_c5`, `fromStockLocation`.`deleted_time` AS `t6_c6`, `fromStockLocation`.`deleted_by` AS `t6_c7`, `fromStockLocation`.`code` AS `t6_c8`, `fromStockLocation`.`name` AS `t6_c9`, `fromStockLocation`.`delivery_address` AS `t6_c10`, `fromStockLocation`.`phone1` AS `t6_c11`, `fromStockLocation`.`phone2` AS `t6_c12`, `fromStockLocation`.`fax` AS `t6_c13`, `fromStockLocation`.`email` AS `t6_c14`, `fromStockLocation`.`contact` AS `t6_c15`, `fromStockLocation`.`is_active` AS `t6_c16`, `paymentTerm`.`id` AS `t7_c0`, `paymentTerm`.`created_time` AS `t7_c1`, `paymentTerm`.`created_by` AS `t7_c2`, `paymentTerm`.`updated_time` AS `t7_c3`, `paymentTerm`.`updated_by` AS `t7_c4`, `paymentTerm`.`is_deleted` AS `t7_c5`, `paymentTerm`.`deleted_time` AS `t7_c6`, `paymentTerm`.`deleted_by` AS `t7_c7`, `paymentTerm`.`name` AS `t7_c8`, `paymentTerm`.`payment_term_type_id` AS `t7_c9`, `paymentTerm`.`days` AS `t7_c10`, `paymentTerm`.`is_active` AS `t7_c11` FROM `fa_sales_order` `t`  LEFT OUTER JOIN `fa_transaction_type` `transactionType` ON (`t`.`transaction_type_id`=`transactionType`.`id`)  LEFT OUTER JOIN `fa_customer_head` `customerHead` ON (`t`.`customer_head_id`=`customerHead`.`id`)  LEFT OUTER JOIN `fa_customer_branch` `customerBranch` ON (`t`.`customer_branch_id`=`customerBranch`.`id`)  LEFT OUTER JOIN `fa_sales_type` `salesType` ON (`t`.`sales_type_id`=`salesType`.`id`)  LEFT OUTER JOIN `fa_shipping_company` `shippingCompany` ON (`t`.`shipping_company_id`=`shippingCompany`.`id`)  LEFT OUTER JOIN `fa_location` `fromStockLocation` ON (`t`.`from_stock_location_id`=`fromStockLocation`.`id`)  LEFT OUTER JOIN `fa_payment_term` `paymentTerm` ON (`t`.`payment_term_id`=`paymentTerm`.`id`)  ORDER BY customer_head_id asc LIMIT 20.
+2013/06/28 10:59:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand gagal menjalankan statementSQL: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'customer_head_id' in order clause is ambiguous' in C:\xampp\htdocs\yii_frontaccounting\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php(761): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesOrderController.php(190): CActiveRecord->findAll(Object(CDbCriteria))
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesOrderController->actionAdminDataJson()
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#18 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#20 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesOrder/adminDataJson?_search=false&nd=1372409967447&rows=20&page=1&sidx=customer_head_id&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesOrder/admin
+---
+2013/06/28 11:00:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/salesGroup/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesGroup/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesOrder/
+---
+2013/06/28 11:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/salesTransaction/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesTransaction/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid
+---
+2013/06/28 11:14:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/salesTransaction/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesTransaction/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesOrder/admin
+---
+2013/06/28 11:32:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/directDelivery/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/directDelivery/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid
+---
+2013/06/28 11:32:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/directInvoice/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/directInvoice/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid
+---
+2013/06/28 11:45:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/salesGroup/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesGroup/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid
+---
+2013/06/28 11:46:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/salesType/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesType/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid
+---
+2013/06/28 11:50:05 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.accountingJqGrid.models." tidak valid. Pastikan alias tersebut menunjuk ke file PHP yang ada' in C:\xampp\htdocs\yii_frontaccounting\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/gii/crud
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/gii/crud
+---
+2013/06/28 12:03:28 [error] [exception.CException] exception 'CException' with message 'Properti "SalesOrder.name" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('name')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesType\adminDataJson.php(11): CActiveRecord->__get('name')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesTypeController.php(192): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesTypeController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesType/adminDataJson?_search=false&nd=1372413806778&rows=20&page=1&sidx=&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesType/admin
+---
+2013/06/28 12:03:37 [error] [exception.CException] exception 'CException' with message 'Properti "SalesOrder.name" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('name')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesType\adminDataJson.php(11): CActiveRecord->__get('name')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesTypeController.php(192): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesTypeController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesType/adminDataJson?_search=false&nd=1372413806778&rows=20&page=1&sidx=&sord=asc
+---
+2013/06/28 12:05:09 [error] [exception.CException] exception 'CException' with message 'Properti "SalesType.date" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('date')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesType\adminDataJson.php(5): CActiveRecord->__get('date')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesTypeController.php(192): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesTypeController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesType/adminDataJson?_search=false&nd=1372413806778&rows=20&page=1&sidx=&sord=asc
+---

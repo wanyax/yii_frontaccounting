@@ -108,8 +108,8 @@ return array(
             'class' => 'CLogRouter',
             'routes' => array(
                 array(
-                    'class' => 'CFileLogRoute',
-                    'levels' => 'error, warning',
+                   'class' => 'CFileLogRoute',
+                   'levels' => 'error, warning',
                 ),
                 // debug toolbar configuration
             //  array(
@@ -119,9 +119,9 @@ return array(
             //      'allowedIPs' => array('127.0.0.1'),
             //  ),
                 // inline log
-            //  array(
-            //      'class'=>'CWebLogRoute',
-            //  ),
+            // array(
+            //     'class'=>'CWebLogRoute',
+             //),
             ),
         ),
         'widgetFactory' => array(
