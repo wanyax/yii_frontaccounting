@@ -7958,3 +7958,284 @@ Stack trace:
 #19 {main}
 REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesType/adminDataJson?_search=false&nd=1372413806778&rows=20&page=1&sidx=&sord=asc
 ---
+2013/07/03 04:51:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/salesTransaction/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesTransaction/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid
+---
+2013/07/03 05:03:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "gii" seperti yang diminta.' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(270): CController->missingAction('gii')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('gii')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('site/gii')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/site/gii
+---
+2013/07/03 05:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/salesPerson/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesPerson/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid
+---
+2013/07/03 05:05:54 [error] [exception.CException] exception 'CException' with message 'Alias "application.models.accountingJqGrid.models.SalesPerson" tidak valid. Pastikan alias tersebut menunjuk ke file PHP yang ada' in C:\xampp\htdocs\yii_frontaccounting\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/gii/crud
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/gii/crud
+---
+2013/07/03 05:46:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in C:\xampp\htdocs\yii_frontaccounting\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(RWebUser), 'Anda tidak diot...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesPerson/adminDataJson?_search=false&nd=1372823205578&rows=20&page=1&sidx=&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesPerson/admin
+---
+2013/07/03 05:47:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Anda tidak diotorisasi untuk melakukan action ini.' in C:\xampp\htdocs\yii_frontaccounting\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(RWebUser), 'Anda tidak diot...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesPerson/adminDataJson?_search=false&nd=1372823265711&rows=20&page=1&sidx=&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesPerson/admin
+---
+2013/07/03 06:02:33 [error] [exception.CException] exception 'CException' with message 'Properti "SalesPerson.ia_active" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('ia_active')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesPerson\adminDataJson.php(5): CActiveRecord->__get('ia_active')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesPersonController.php(192): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesPersonController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesPerson/adminDataJson?_search=false&nd=1372824152133&rows=20&page=1&sidx=&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesPerson/admin
+---
+2013/07/03 06:02:44 [error] [exception.CException] exception 'CException' with message 'Properti "SalesPerson.ia_active" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('ia_active')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesPerson\adminDataJson.php(5): CActiveRecord->__get('ia_active')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesPersonController.php(192): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesPersonController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesPerson/adminDataJson?_search=false&nd=1372824152133&rows=20&page=1&sidx=&sord=asc
+---
+2013/07/03 06:05:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/salesPrice/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesPrice/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesPerson/admin
+---
+2013/07/03 06:54:27 [error] [exception.CException] exception 'CException' with message 'Properti "SalesPrice.is_active" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('is_active')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesPrice\adminDataJson.php(5): CActiveRecord->__get('is_active')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesPriceController.php(192): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesPriceController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesPrice/adminDataJson?_search=false&nd=1372827265365&rows=20&page=1&sidx=&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesPrice/admin
+---
+2013/07/03 06:54:36 [error] [exception.CException] exception 'CException' with message 'Properti "SalesPrice.is_active" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('is_active')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesPrice\adminDataJson.php(5): CActiveRecord->__get('is_active')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesPriceController.php(192): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesPriceController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesPrice/adminDataJson?_search=false&nd=1372827265365&rows=20&page=1&sidx=&sord=asc
+---
+2013/07/03 06:55:34 [error] [exception.CException] exception 'CException' with message 'Properti "SalesPrice.is_active" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('is_active')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesPrice\adminDataJson.php(5): CActiveRecord->__get('is_active')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesPriceController.php(192): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesPriceController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesPrice/adminDataJson?_search=false&nd=1372827332852&rows=20&page=1&sidx=&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesPrice/admin
+---
+2013/07/03 06:57:26 [error] [exception.CException] exception 'CException' with message 'Properti "StockMaster.desciption" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('desciption')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesPrice\adminDataJson.php(9): CActiveRecord->__get('desciption')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesPriceController.php(192): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesPriceController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesPrice/adminDataJson?_search=false&nd=1372827265365&rows=20&page=1&sidx=&sord=asc
+---
+2013/07/03 06:57:36 [error] [exception.CException] exception 'CException' with message 'Properti "StockMaster.desciption" tidak didefinisikan.' in C:\xampp\htdocs\yii_frontaccounting\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(143): CComponent->__get('desciption')
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\salesPrice\adminDataJson.php(9): CActiveRecord->__get('desciption')
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SalesPriceController.php(192): CController->renderPartial('adminDataJson', Array)
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SalesPriceController->actionAdminDataJson()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#17 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/salesPrice/adminDataJson?_search=false&nd=1372827455087&rows=20&page=1&sidx=&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesPrice/admin
+---
+2013/07/03 08:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/customerHeadInformation/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/customerHeadInformation/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/salesPrice/admin
+---
+2013/07/03 09:59:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/customerBranchInformation/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/customerBranchInformation/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/customerHeadInformation/
+---
