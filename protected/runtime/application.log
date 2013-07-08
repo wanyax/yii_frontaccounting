@@ -8990,3 +8990,140 @@ Stack trace:
 REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/purchaseOrder/admin
 HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/purchasePrice/admin
 ---
+2013/07/08 05:16:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/supplierInformation/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/supplierInformation/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/purchaseOrder/admin
+---
+2013/07/08 05:16:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/supplierInformation/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/supplierInformation/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/purchasePrice/admin
+---
+2013/07/08 05:29:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/supplierInformation/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/supplierInformation/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/purchasePrice/
+---
+2013/07/08 10:08:46 [error] [php] Undefined variable: suppliers (C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\supplierInformation\adminDataJson.php:4)
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): SupplierInformationController->renderFile()
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SupplierInformationController.php(201): SupplierInformationController->renderPartial()
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SupplierInformationController->actionAdminDataJson()
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): SupplierInformationController->runAction()
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): SupplierInformationController->filterAccessControl()
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): SupplierInformationController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): SupplierInformationController->run()
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CWebApplication->run()
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/supplierInformation/adminDataJson?_search=false&nd=1373270925087&rows=20&page=1&sidx=&sord=asc
+2013/07/08 10:08:57 [error] [php] Undefined variable: suppliers (C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\views\supplierInformation\adminDataJson.php:4)
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(869): SupplierInformationController->renderFile()
+#1 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SupplierInformationController.php(201): SupplierInformationController->renderPartial()
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SupplierInformationController->actionAdminDataJson()
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): SupplierInformationController->runAction()
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): SupplierInformationController->filterAccessControl()
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): SupplierInformationController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): SupplierInformationController->run()
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CWebApplication->run()
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/supplierInformation/adminDataJson?_search=false&nd=1373270925087&rows=20&page=1&sidx=&sord=asc
+2013/07/08 10:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/supplierAccount/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/supplierAccount/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/supplierInformation/admin
+---
+2013/07/08 10:19:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/supplierTransaction/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/supplierTransaction/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/supplierInformation/admin
+---
+2013/07/08 10:44:09 [error] [exception.CDbException] exception 'CDbException' with message 'Relasi "supplierInvoiceItems" tidak didefinisikan dalam kelas active record"Supplier".' in C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php:211
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php(281): CActiveFinder->buildJoinTree(Object(CJoinElement), 'supplierInvoice...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(1301): CActiveFinder->__construct(Object(Supplier), Array)
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SupplierTransactionController.php(186): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SupplierTransactionController->actionAdminDataJson()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/supplierTransaction/adminDataJson?_search=false&nd=1373273048171&rows=20&page=1&sidx=&sord=asc
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/supplierTransaction/admin
+---
+2013/07/08 10:44:21 [error] [exception.CDbException] exception 'CDbException' with message 'Relasi "supplierInvoiceItems" tidak didefinisikan dalam kelas active record"Supplier".' in C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php:211
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php(281): CActiveFinder->buildJoinTree(Object(CJoinElement), 'supplierInvoice...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(1301): CActiveFinder->__construct(Object(Supplier), Array)
+#3 C:\xampp\htdocs\yii_frontaccounting\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\yii_frontaccounting\protected\modules\accountingJqGrid\controllers\SupplierTransactionController.php(186): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii_frontaccounting\framework\web\actions\CInlineAction.php(49): SupplierTransactionController->actionAdminDataJson()
+#6 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii_frontaccounting\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii_frontaccounting\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(282): CController->run('adminDataJson')
+#15 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#16 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/supplierTransaction/adminDataJson?_search=false&nd=1373273048171&rows=20&page=1&sidx=&sord=asc
+---
+2013/07/08 10:46:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Tidak bisa mengurai request "accountingJqGrid/supplierPurchaseOrder/admin"' in C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii_frontaccounting\framework\web\CWebApplication.php(141): CWebApplication->runController('accountingJqGri...')
+#1 C:\xampp\htdocs\yii_frontaccounting\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii_frontaccounting\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_frontaccounting/index.php/accountingJqGrid/supplierPurchaseOrder/admin
+HTTP_REFERER=http://localhost/yii_frontaccounting/index.php/accountingJqGrid/supplierTransaction/admin
+---
